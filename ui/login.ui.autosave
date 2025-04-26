@@ -58,7 +58,7 @@
     <string>Create Account</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="Txt_email">
    <property name="geometry">
     <rect>
      <x>320</x>
@@ -106,7 +106,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="txt_U">
+  <widget class="QLineEdit" name="txt_Email">
    <property name="geometry">
     <rect>
      <x>320</x>
@@ -123,7 +123,7 @@ border-radius:10px</string>
     <string>Please enter your email</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_8">
+  <widget class="QLabel" name="txt_password">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -145,7 +145,7 @@ border-radius:10px</string>
     <string>password</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="txt_password_2">
    <property name="geometry">
     <rect>
      <x>320</x>
@@ -184,7 +184,7 @@ border-radius: 10px</string>
     <string>confirm password</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="txt_confirmpassword">
    <property name="geometry">
     <rect>
      <x>300</x>
