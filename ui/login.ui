@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>901</width>
-    <height>787</height>
+    <width>900</width>
+    <height>780</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,10 +16,10 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>20</y>
-     <width>841</width>
-     <height>601</height>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>780</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -38,34 +38,40 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>50</y>
-     <width>391</width>
-     <height>101</height>
+     <x>170</x>
+     <y>70</y>
+     <width>481</width>
+     <height>111</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Script MT</family>
-     <pointsize>47</pointsize>
+     <family>Arial Rounded MT</family>
+     <pointsize>44</pointsize>
      <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color:rgb(0, 234, 255)</string>
+    <string notr="true">color:rgb(255, 240, 240)</string>
    </property>
    <property name="text">
     <string>Create Account</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="Txt_email">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>230</y>
+     <x>300</x>
+     <y>160</y>
      <width>131</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>131</width>
+     <height>0</height>
+    </size>
    </property>
    <property name="font">
     <font>
@@ -74,7 +80,7 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.287293 rgba(0, 255, 207, 255), stop:0.834254 rgba(67, 0, 255, 255))</string>
+    <string notr="true">color:rgb(255, 255, 255)</string>
    </property>
    <property name="text">
     <string>Email</string>
@@ -106,28 +112,33 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="txt_U">
+  <widget class="QLineEdit" name="txt_Email">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>270</y>
+     <x>300</x>
+     <y>210</y>
      <width>191</width>
      <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0.054, x2:1, y2:0, stop:0 rgba(98, 255, 187, 255), stop:1 rgba(255, 255, 255, 255));
-border-radius:10px</string>
+border: 2px solid white;
+ border-radius: 20px;
+ padding: 10px 16px;
+background-color: transparent;
+ color: white;
+    font-size: 14px;</string>
    </property>
    <property name="placeholderText">
     <string>Please enter your email</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_8">
+  <widget class="QLabel" name="txt_password">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>300</y>
+     <x>300</x>
+     <y>270</y>
      <width>171</width>
      <height>41</height>
     </rect>
@@ -139,24 +150,29 @@ border-radius:10px</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.287293 rgba(0, 255, 207, 255), stop:0.834254 rgba(67, 0, 255, 255))</string>
+    <string notr="true">color:rgb(255, 255, 255)</string>
    </property>
    <property name="text">
     <string>password</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="txt_password_2">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>340</y>
-     <width>201</width>
-     <height>31</height>
+     <x>300</x>
+     <y>320</y>
+     <width>231</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0.054, x2:1, y2:0, stop:0 rgba(98, 255, 187, 255), stop:1 rgba(255, 255, 255, 255));
-border-radius: 10px</string>
+border: 2px solid white;
+ border-radius: 20px;
+ padding: 10px 16px;
+background-color: transparent;
+ color: white;
+    font-size: 14px;</string>
    </property>
    <property name="placeholderText">
     <string>please enter your password</string>
@@ -178,16 +194,16 @@ border-radius: 10px</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.287293 rgba(0, 255, 207, 255), stop:0.834254 rgba(67, 0, 255, 255))</string>
+    <string notr="true">color:rgb(255, 255, 255)</string>
    </property>
    <property name="text">
     <string>confirm password</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="txt_confirmpassword">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>310</x>
      <y>430</y>
      <width>221</width>
      <height>41</height>
@@ -195,7 +211,12 @@ border-radius: 10px</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0.054, x2:1, y2:0, stop:0 rgba(98, 255, 187, 255), stop:1 rgba(255, 255, 255, 255));
-border-radius: 10px</string>
+border: 2px solid white;
+ border-radius: 20px;
+ padding: 10px 16px;
+background-color: transparent;
+ color: white;
+    font-size: 14px;</string>
    </property>
    <property name="placeholderText">
     <string>please confirm your password</string>
@@ -272,15 +293,15 @@ border-radius: 10px</string>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>560</y>
+     <x>320</x>
+     <y>520</y>
      <width>231</width>
      <height>61</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Segoe Print</family>
+     <family>Segoe MDL2 Assets</family>
      <pointsize>30</pointsize>
     </font>
    </property>
@@ -296,7 +317,7 @@ border-radius: 10px</string>
    <property name="geometry">
     <rect>
      <x>470</x>
-     <y>350</y>
+     <y>340</y>
      <width>51</width>
      <height>21</height>
     </rect>
@@ -312,7 +333,7 @@ border-radius: 10px</string>
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>480</x>
      <y>440</y>
      <width>41</width>
      <height>21</height>
@@ -329,8 +350,8 @@ border-radius: 10px</string>
   <widget class="QCheckBox" name="checkBox">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>500</y>
+     <x>320</x>
+     <y>480</y>
      <width>191</width>
      <height>31</height>
     </rect>

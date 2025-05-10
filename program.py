@@ -144,6 +144,7 @@ class Home(QWidget):
         uic.loadUi("ui/home.ui", self)
 
         self.email = email 
+        
 
         
 
