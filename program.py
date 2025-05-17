@@ -16,7 +16,6 @@ class Alert(QMessageBox):
         self.setText(message)
         self.exec()
 
-msg = Alert()
 
 class Login(QWidget):
     def __init__(self):
@@ -172,6 +171,7 @@ class Home(QWidget):
         
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    msg = Alert()
     login = Login()
     login.show()
     sys.exit(app.exec())        
