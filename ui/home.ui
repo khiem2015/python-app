@@ -1442,8 +1442,8 @@ border: none</string>
     <widget class="QPushButton" name="btn_avatar">
      <property name="geometry">
       <rect>
-       <x>610</x>
-       <y>80</y>
+       <x>680</x>
+       <y>250</y>
        <width>251</width>
        <height>291</height>
       </rect>
@@ -1485,42 +1485,7 @@ border: none</string>
       <string>Name:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_44">
-     <property name="geometry">
-      <rect>
-       <x>170</x>
-       <y>300</y>
-       <width>221</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Comic Sans MS</family>
-       <pointsize>40</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Password</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="txt_password">
-     <property name="geometry">
-      <rect>
-       <x>170</x>
-       <y>370</y>
-       <width>461</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="echoMode">
-      <enum>QLineEdit::EchoMode::Password</enum>
-     </property>
-     <property name="placeholderText">
-      <string>your password</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="txt_name_2">
+    <widget class="QLineEdit" name="txt_name">
      <property name="geometry">
       <rect>
        <x>170</x>
@@ -1530,7 +1495,7 @@ border: none</string>
       </rect>
      </property>
      <property name="echoMode">
-      <enum>QLineEdit::EchoMode::Password</enum>
+      <enum>QLineEdit::EchoMode::Normal</enum>
      </property>
      <property name="placeholderText">
       <string>your full name</string>
@@ -1555,7 +1520,7 @@ border: none</string>
       <string>Email:</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="txt_email_2">
+    <widget class="QLineEdit" name="txt_email">
      <property name="geometry">
       <rect>
        <x>180</x>
@@ -1568,7 +1533,7 @@ border: none</string>
       <string notr="true"/>
      </property>
      <property name="echoMode">
-      <enum>QLineEdit::EchoMode::Password</enum>
+      <enum>QLineEdit::EchoMode::Normal</enum>
      </property>
      <property name="placeholderText">
       <string>your email </string>
@@ -1578,7 +1543,7 @@ border: none</string>
      <property name="geometry">
       <rect>
        <x>170</x>
-       <y>430</y>
+       <y>330</y>
        <width>221</width>
        <height>51</height>
       </rect>
@@ -1593,33 +1558,33 @@ border: none</string>
       <string>Birthday</string>
      </property>
     </widget>
-    <widget class="QDateEdit" name="dateEdit">
+    <widget class="QDateEdit" name="txt_birthday">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>500</y>
+       <x>170</x>
+       <y>420</y>
        <width>461</width>
        <height>41</height>
       </rect>
      </property>
     </widget>
-    <widget class="QComboBox" name="comboBox">
+    <widget class="QComboBox" name="txt_gender">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>590</y>
+       <x>170</x>
+       <y>520</y>
        <width>101</width>
        <height>31</height>
       </rect>
      </property>
      <item>
       <property name="text">
-       <string>male</string>
+       <string>Male</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>female</string>
+       <string>Female</string>
       </property>
      </item>
      <item>
@@ -1627,6 +1592,38 @@ border: none</string>
        <string>None</string>
       </property>
      </item>
+    </widget>
+    <widget class="QPushButton" name="btn_save_account">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>580</y>
+       <width>221</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_44">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>460</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Gender</string>
+     </property>
     </widget>
    </widget>
   </widget>

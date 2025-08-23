@@ -58,7 +58,7 @@ class Login(QWidget):
         user = get_user_by_email_and_password(email, password)
         if user:
             msg.success_message("Login", "Welcome to the system")
-            self.show_home(email)
+            self.show_home(user["id"])
             return
                 
         msg.error_message("Login", "Invalid email or password")
@@ -69,8 +69,8 @@ class Login(QWidget):
         self.register.show()
         self.hide()
     
-    def show_home(self, email):
-        self.home = Home(email)
+    def show_home(self, id):
+        self.home = Home(id)
         self.home.show()
         self.hide()
 
@@ -154,7 +154,7 @@ class Register(QWidget):
 class Home(QWidget):
     def __init__(self, id):
         super().__init__()
-        uic.loadUi("ui/form.ui", self)
+        uic.loadUi("ui/home.ui", self)
 
         self.id = id
         self.user = get_user_by_id(id)
@@ -170,11 +170,12 @@ class Home(QWidget):
         self.txt_email = self.findChild(QLineEdit, "txt_email")
         self.txt_birthday = self.findChild(QDateEdit, "txt_birthday")
         self.txt_gender = self.findChild(QComboBox, "txt_gender")
-        self.txt_avatar = self.findChild(QPushButton, "txt_avatar")
+        self.btn_avatar = self.findChild(QPushButton, "btn_avatar")
 
         self.btn_home.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 0))
         self.btn_profile.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 1))
         self.btn_save_account.clicked.connect(self.update_user_info)
+        self.btn_avatar.clicked.connect(self.update_avatar)
 
     def navigate_screen(self, stackWidget: QStackedWidget, index: int):
         stackWidget.setCurrentIndex(index)
