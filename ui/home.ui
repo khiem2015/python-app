@@ -32,7 +32,7 @@
     <string/>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(248, 255, 172)</string>
+    <string notr="true">background-color:rgb(170, 170, 255)</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Shape::NoFrame</enum>
@@ -55,6 +55,9 @@
        <family>Comic Sans MS</family>
        <pointsize>40</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(0, 0, 0)</string>
      </property>
      <property name="text">
       <string>Wheather Forecast</string>
@@ -97,22 +100,6 @@
      </property>
      <property name="text">
       <string>Week</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit">
-     <property name="geometry">
-      <rect>
-       <x>540</x>
-       <y>30</y>
-       <width>141</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border-radius:10px</string>
-     </property>
-     <property name="placeholderText">
-      <string>Search</string>
      </property>
     </widget>
     <widget class="QFrame" name="frame">
@@ -262,7 +249,7 @@ border: none
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:rgb(187, 188, 255)</string>
+       <string notr="true">background-color:rgb(255, 231, 193)</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::Shape::StyledPanel</enum>
@@ -403,7 +390,8 @@ border: none
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:rgb(212, 255, 236)</string>
+      <string notr="true">background-color:rgb(255, 231, 193)
+</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Shape::StyledPanel</enum>
@@ -541,7 +529,7 @@ Wind: 8 km/h</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:rgb(255, 252, 207)</string>
+      <string notr="true">background-color:rgb(255, 231, 193)</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Shape::StyledPanel</enum>
@@ -565,6 +553,9 @@ Wind: 8 km/h</string>
         <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 0)</string>
+      </property>
       <property name="text">
        <string>Ho Chi Minh City</string>
       </property>
@@ -585,6 +576,9 @@ Wind: 8 km/h</string>
         <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 0)</string>
+      </property>
       <property name="text">
        <string>Saturday</string>
       </property>
@@ -603,6 +597,9 @@ Wind: 8 km/h</string>
         <family>Microsoft YaHei UI</family>
         <pointsize>30</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 0)</string>
       </property>
       <property name="text">
        <string>33°C  </string>
@@ -662,7 +659,7 @@ border: none</string>
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:rgb(85, 170, 255)</string>
+      <string notr="true">background-color:rgb(255, 242, 202)</string>
      </property>
      <property name="verticalHeaderFormat">
       <enum>QCalendarWidget::VerticalHeaderFormat::NoVerticalHeader</enum>
@@ -687,7 +684,7 @@ border: none</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:rgb(232, 255, 183)</string>
+      <string notr="true">background-color:rgb(255, 231, 193)</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Shape::StyledPanel</enum>
@@ -825,7 +822,7 @@ border: none</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:rgb(255, 170, 186)</string>
+      <string notr="true">background-color:rgb(255, 231, 193)</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Shape::StyledPanel</enum>
@@ -837,7 +834,7 @@ border: none</string>
       <property name="geometry">
        <rect>
         <x>70</x>
-        <y>10</y>
+        <y>0</y>
         <width>81</width>
         <height>51</height>
        </rect>
@@ -919,7 +916,8 @@ Wind: 10 km/h</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
+       <string notr="true">color:rgb(0, 0, 0)
+</string>
       </property>
       <property name="text">
        <string>Tuesday</string>
@@ -963,7 +961,7 @@ border: none</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:rgb(191, 255, 162)</string>
+      <string notr="true">background-color:rgb(255, 231, 193)</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Shape::StyledPanel</enum>
@@ -987,7 +985,7 @@ border: none</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color:rgb(0,0,0)</string>
       </property>
       <property name="text">
        <string>Precipitation: 65%
@@ -1103,7 +1101,8 @@ border: none
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:rgb(255, 242, 202)</string>
+      <string notr="true">background-color:rgb(255, 231, 193)
+</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Shape::StyledPanel</enum>
@@ -1241,7 +1240,7 @@ border: none</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:rgb(187, 188, 255)</string>
+      <string notr="true">background-color:rgb(255, 231, 193)</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Shape::StyledPanel</enum>
@@ -1369,33 +1368,6 @@ border: none</string>
       </property>
      </widget>
     </widget>
-    <widget class="QPushButton" name="btn_profile">
-     <property name="geometry">
-      <rect>
-       <x>760</x>
-       <y>30</y>
-       <width>81</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: none;
-border: none</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../../../../Pictures/z4304844020153_21076e73f2b11bffd2f1681533787c48.jpg</normaloff>../../../../Pictures/z4304844020153_21076e73f2b11bffd2f1681533787c48.jpg</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>40</width>
-       <height>40</height>
-      </size>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_40">
      <property name="geometry">
       <rect>
@@ -1415,26 +1387,67 @@ border: none</string>
       <string>Khiem</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_9">
+    <widget class="QLabel" name="label_45">
      <property name="geometry">
       <rect>
-       <x>490</x>
-       <y>40</y>
+       <x>780</x>
+       <y>30</y>
        <width>41</width>
-       <height>31</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="text">
       <string/>
      </property>
-     <property name="icon">
-      <iconset theme="QIcon::ThemeIcon::EditFind"/>
+     <property name="pixmap">
+      <pixmap>../../../../../Downloads/images__2_-removebg-preview.png</pixmap>
      </property>
-     <property name="iconSize">
-      <size>
-       <width>40</width>
-       <height>12</height>
-      </size>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>20</y>
+       <width>201</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:1 rgba(0, 0, 0, 255));
+border: 3px solid black;
+ border-radius: 20px;
+ padding: 10px 16px;
+background-color: transparent;
+ color: black;
+    font-size: 14px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>search anything</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>30</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: None;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../../../../Downloads/images__1_-removebg-preview (1).png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
      </property>
     </widget>
    </widget>
@@ -1442,8 +1455,8 @@ border: none</string>
     <widget class="QPushButton" name="btn_avatar">
      <property name="geometry">
       <rect>
-       <x>680</x>
-       <y>250</y>
+       <x>650</x>
+       <y>160</y>
        <width>251</width>
        <height>291</height>
       </rect>
@@ -1577,6 +1590,9 @@ border: none</string>
        <height>31</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0, 0, 255)</string>
+     </property>
      <item>
       <property name="text">
        <string>Male</string>
@@ -1601,6 +1617,15 @@ border: none</string>
        <width>221</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Source Code Pro</family>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(170, 0, 255)</string>
      </property>
      <property name="text">
       <string>Save</string>
@@ -1637,7 +1662,7 @@ border: none</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgb(170, 170, 255)</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Shape::StyledPanel</enum>
