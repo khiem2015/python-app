@@ -25,7 +25,7 @@
    <property name="font">
     <font>
      <family>Comic Sans MS</family>
-     <pointsize>8</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="whatsThis">
@@ -38,13 +38,13 @@
     <enum>QFrame::Shape::NoFrame</enum>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="home">
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>40</x>
        <y>20</y>
        <width>381</width>
        <height>51</height>
@@ -60,14 +60,14 @@
       <string notr="true">color:rgb(0, 0, 0)</string>
      </property>
      <property name="text">
-      <string>Wheather Forecast</string>
+      <string>Weather Forecast</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>330</y>
+       <x>60</x>
+       <y>320</y>
        <width>171</width>
        <height>61</height>
       </rect>
@@ -85,8 +85,8 @@
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>340</y>
+       <x>220</x>
+       <y>320</y>
        <width>141</width>
        <height>51</height>
       </rect>
@@ -102,14 +102,17 @@
       <string>Week</string>
      </property>
     </widget>
-    <widget class="QFrame" name="frame">
+    <widget class="QFrame" name="frame_day1">
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>400</y>
-       <width>161</width>
-       <height>121</height>
+       <y>390</y>
+       <width>180</width>
+       <height>140</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255, 231, 193)</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Shape::StyledPanel</enum>
@@ -117,20 +120,23 @@
      <property name="frameShadow">
       <enum>QFrame::Shadow::Raised</enum>
      </property>
-     <widget class="QLabel" name="label_8">
+     <widget class="QLabel" name="label_details_day1">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>-10</y>
-        <width>101</width>
-        <height>91</height>
+        <x>90</x>
+        <y>10</y>
+        <width>71</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Comic Sans MS</family>
-        <pointsize>8</pointsize>
+        <pointsize>10</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 0)</string>
       </property>
       <property name="text">
        <string>Precipitation: 40%
@@ -138,7 +144,7 @@ Humidity: 85%
 Wind: 5 km/h</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="label_temp_day1">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -150,14 +156,17 @@ Wind: 5 km/h</string>
       <property name="font">
        <font>
         <family>Microsoft YaHei UI</family>
-        <pointsize>10</pointsize>
+        <pointsize>12</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 0)</string>
       </property>
       <property name="text">
        <string>33°C  &lt;-- 27°C</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_5">
+     <widget class="QPushButton" name="btn_icon_day1">
       <property name="geometry">
        <rect>
         <x>70</x>
@@ -186,7 +195,7 @@ border: none
        </size>
       </property>
      </widget>
-     <widget class="QLabel" name="label_7">
+     <widget class="QLabel" name="label_weather_day1">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -198,9 +207,12 @@ border: none
       <property name="font">
        <font>
         <family>Arial Rounded MT</family>
-        <pointsize>11</pointsize>
+        <pointsize>13</pointsize>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 0)</string>
       </property>
       <property name="text">
        <string>rainy</string>
@@ -219,7 +231,7 @@ border: none
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="label_day_name1">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -231,162 +243,25 @@ border: none
       <property name="font">
        <font>
         <family>Arial Rounded MT</family>
-        <pointsize>12</pointsize>
+        <pointsize>14</pointsize>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 0)</string>
       </property>
       <property name="text">
        <string>Saturday</string>
       </property>
      </widget>
-     <widget class="QFrame" name="frame_2">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>161</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:rgb(255, 231, 193)</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Shape::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Shadow::Raised</enum>
-      </property>
-      <widget class="QLabel" name="label_9">
-       <property name="geometry">
-        <rect>
-         <x>80</x>
-         <y>10</y>
-         <width>71</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Comic Sans MS</family>
-         <pointsize>8</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color:rgb(0, 0, 0)</string>
-       </property>
-       <property name="text">
-        <string>Precipitation: 40%
-Humidity: 85%
-Wind: 5 km/h</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_6">
-       <property name="geometry">
-        <rect>
-         <x>80</x>
-         <y>60</y>
-         <width>80</width>
-         <height>61</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background: none;
-border: none
-
-</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset>
-         <normaloff>../img/7053460.png</normaloff>../img/7053460.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>40</width>
-         <height>40</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_10">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>80</y>
-         <width>81</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Microsoft YaHei UI</family>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color:rgb(0, 0, 0)</string>
-       </property>
-       <property name="text">
-        <string>33°C  &lt;-- 27°C</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_13">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>71</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Arial Rounded MT</family>
-         <pointsize>12</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color:rgb(0, 0, 0)</string>
-       </property>
-       <property name="text">
-        <string>Saturday</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_11">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>50</y>
-         <width>51</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Arial Rounded MT</family>
-         <pointsize>11</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color:rgb(0, 0, 0)</string>
-       </property>
-       <property name="text">
-        <string>rainy</string>
-       </property>
-      </widget>
-     </widget>
     </widget>
-    <widget class="QFrame" name="frame_3">
+    <widget class="QFrame" name="frame_day3">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>400</y>
-       <width>161</width>
-       <height>121</height>
+       <x>450</x>
+       <y>390</y>
+       <width>180</width>
+       <height>140</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -399,7 +274,7 @@ border: none
      <property name="frameShadow">
       <enum>QFrame::Shadow::Raised</enum>
      </property>
-     <widget class="QLabel" name="label_15">
+     <widget class="QLabel" name="label_temp_day3">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -411,7 +286,7 @@ border: none
       <property name="font">
        <font>
         <family>Microsoft YaHei UI</family>
-        <pointsize>10</pointsize>
+        <pointsize>12</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -421,7 +296,7 @@ border: none
        <string>34°C  &lt;-- 27°C</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_16">
+     <widget class="QLabel" name="label_weather_day3">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -433,7 +308,7 @@ border: none
       <property name="font">
        <font>
         <family>Arial Rounded MT</family>
-        <pointsize>11</pointsize>
+        <pointsize>13</pointsize>
         <bold>true</bold>
        </font>
       </property>
@@ -444,7 +319,7 @@ border: none
        <string>thundershower</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_18">
+     <widget class="QLabel" name="label_day_name3">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -456,7 +331,7 @@ border: none
       <property name="font">
        <font>
         <family>Arial Rounded MT</family>
-        <pointsize>12</pointsize>
+        <pointsize>14</pointsize>
         <bold>true</bold>
        </font>
       </property>
@@ -467,7 +342,7 @@ border: none
        <string>Sunday</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="btn_icon_day3">
       <property name="geometry">
        <rect>
         <x>90</x>
@@ -494,7 +369,7 @@ border:none</string>
        </size>
       </property>
      </widget>
-     <widget class="QLabel" name="label_14">
+     <widget class="QLabel" name="label_details_day3">
       <property name="geometry">
        <rect>
         <x>70</x>
@@ -506,7 +381,7 @@ border:none</string>
       <property name="font">
        <font>
         <family>Comic Sans MS</family>
-        <pointsize>8</pointsize>
+        <pointsize>10</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -519,10 +394,10 @@ Wind: 8 km/h</string>
       </property>
      </widget>
     </widget>
-    <widget class="QFrame" name="frame_4">
+    <widget class="QFrame" name="frame_current_weather">
      <property name="geometry">
       <rect>
-       <x>60</x>
+       <x>50</x>
        <y>160</y>
        <width>501</width>
        <height>151</height>
@@ -537,7 +412,7 @@ Wind: 8 km/h</string>
      <property name="frameShadow">
       <enum>QFrame::Shadow::Raised</enum>
      </property>
-     <widget class="QLabel" name="label_19">
+     <widget class="QLabel" name="label_city_name">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -560,7 +435,7 @@ Wind: 8 km/h</string>
        <string>Ho Chi Minh City</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_20">
+     <widget class="QLabel" name="label_current_day">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -583,7 +458,7 @@ Wind: 8 km/h</string>
        <string>Saturday</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_21">
+     <widget class="QLabel" name="label_current_temp">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -605,7 +480,7 @@ Wind: 8 km/h</string>
        <string>33°C  </string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_8">
+     <widget class="QPushButton" name="btn_city_image">
       <property name="geometry">
        <rect>
         <x>210</x>
@@ -623,7 +498,7 @@ border: none</string>
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>../../../../../Downloads/112082293-ho-chi-minh-city-saigon-skyline-vietnam-trendy-vector-illustration-linear-style-removebg-preview.png</normaloff>../../../../../Downloads/112082293-ho-chi-minh-city-saigon-skyline-vietnam-trendy-vector-illustration-linear-style-removebg-preview.png</iconset>
+        <normaloff>../../../../../Downloads/112082293-ho-chi-minh-city-saigon-skyline-vietnam-trendy-vector-illustcast.png</normaloff>../../../../../Downloads/112082293-ho-chi-minh-city-saigon-skyline-vietnam-trendy-vector-illustcast.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -636,8 +511,8 @@ border: none</string>
     <widget class="QCalendarWidget" name="calendar">
      <property name="geometry">
       <rect>
-       <x>620</x>
-       <y>80</y>
+       <x>590</x>
+       <y>110</y>
        <width>291</width>
        <height>241</height>
       </rect>
@@ -645,7 +520,7 @@ border: none</string>
      <property name="font">
       <font>
        <family>Arial Rounded MT</family>
-       <pointsize>8</pointsize>
+       <pointsize>10</pointsize>
        <bold>true</bold>
       </font>
      </property>
@@ -674,13 +549,95 @@ border: none</string>
       <number>3000</number>
      </property>
     </widget>
-    <widget class="QFrame" name="frame_5">
+    <widget class="QLabel" name="label_40">
      <property name="geometry">
       <rect>
-       <x>470</x>
-       <y>400</y>
-       <width>161</width>
-       <height>121</height>
+       <x>720</x>
+       <y>30</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Khiem</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>20</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../../../../Downloads/images__2_-removebg-preview.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_search">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>20</y>
+       <width>201</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:1 rgba(0, 0, 0, 255));
+border: 3px solid black;
+ border-radius: 20px;
+ padding: 10px 16px;
+background-color: transparent;
+ color: black;
+    font-size: 14px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>search anything</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>30</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: None;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../../../../Downloads/images__1_-removebg-preview (1).png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_day2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>390</y>
+       <width>180</width>
+       <height>140</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -692,19 +649,19 @@ border: none</string>
      <property name="frameShadow">
       <enum>QFrame::Shadow::Raised</enum>
      </property>
-     <widget class="QLabel" name="label_22">
+     <widget class="QLabel" name="label_details_day2">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>80</x>
         <y>10</y>
-        <width>81</width>
+        <width>71</width>
         <height>51</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Comic Sans MS</family>
-        <pointsize>8</pointsize>
+        <pointsize>10</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -716,7 +673,147 @@ Humidity: 85%
 Wind: 5 km/h</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_23">
+     <widget class="QPushButton" name="btn_icon_day2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>60</y>
+        <width>80</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;
+border: none
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../img/7053460.png</normaloff>../img/7053460.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_temp_day2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 0)</string>
+      </property>
+      <property name="text">
+       <string>33°C  &lt;-- 27°C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_day_name2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 0)</string>
+      </property>
+      <property name="text">
+       <string>Saturday</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_weather_day2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT</family>
+        <pointsize>13</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 0)</string>
+      </property>
+      <property name="text">
+       <string>rainy</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_day4">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>550</y>
+       <width>180</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255, 231, 193)</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_details_day4">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>81</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Comic Sans MS</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 0)</string>
+      </property>
+      <property name="text">
+       <string>Precipitation: 40%
+Humidity: 85%
+Wind: 5 km/h</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_temp_day4">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -728,7 +825,7 @@ Wind: 5 km/h</string>
       <property name="font">
        <font>
         <family>Microsoft YaHei UI</family>
-        <pointsize>10</pointsize>
+        <pointsize>12</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -738,7 +835,7 @@ Wind: 5 km/h</string>
        <string>31°C  &lt;-- 27°C</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_24">
+     <widget class="QLabel" name="label_weather_day4">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -750,7 +847,7 @@ Wind: 5 km/h</string>
       <property name="font">
        <font>
         <family>Arial Rounded MT</family>
-        <pointsize>11</pointsize>
+        <pointsize>13</pointsize>
         <bold>true</bold>
        </font>
       </property>
@@ -761,7 +858,7 @@ Wind: 5 km/h</string>
        <string>Heavy thunderstorm</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_26">
+     <widget class="QLabel" name="label_day_name4">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -773,7 +870,7 @@ Wind: 5 km/h</string>
       <property name="font">
        <font>
         <family>Arial Rounded MT</family>
-        <pointsize>12</pointsize>
+        <pointsize>14</pointsize>
         <bold>true</bold>
        </font>
       </property>
@@ -784,7 +881,7 @@ Wind: 5 km/h</string>
        <string>Monday</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_7">
+     <widget class="QPushButton" name="btn_icon_day4">
       <property name="geometry">
        <rect>
         <x>90</x>
@@ -812,13 +909,13 @@ border: none</string>
       </property>
      </widget>
     </widget>
-    <widget class="QFrame" name="frame_6">
+    <widget class="QFrame" name="frame_day5">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>540</y>
-       <width>161</width>
-       <height>121</height>
+       <x>250</x>
+       <y>550</y>
+       <width>180</width>
+       <height>140</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -830,11 +927,11 @@ border: none</string>
      <property name="frameShadow">
       <enum>QFrame::Shadow::Raised</enum>
      </property>
-     <widget class="QLabel" name="label_27">
+     <widget class="QLabel" name="label_details_day5">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>0</y>
+        <x>90</x>
+        <y>10</y>
         <width>81</width>
         <height>51</height>
        </rect>
@@ -842,7 +939,7 @@ border: none</string>
       <property name="font">
        <font>
         <family>Comic Sans MS</family>
-        <pointsize>8</pointsize>
+        <pointsize>10</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -854,11 +951,11 @@ Humidity: 76%
 Wind: 10 km/h</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_28">
+     <widget class="QLabel" name="label_temp_day5">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>80</y>
+        <y>90</y>
         <width>81</width>
         <height>16</height>
        </rect>
@@ -866,7 +963,7 @@ Wind: 10 km/h</string>
       <property name="font">
        <font>
         <family>Microsoft YaHei UI</family>
-        <pointsize>10</pointsize>
+        <pointsize>12</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -876,11 +973,11 @@ Wind: 10 km/h</string>
        <string>33°C  &lt;-- 27°C</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_29">
+     <widget class="QLabel" name="label_weather_day5">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>50</y>
+        <y>60</y>
         <width>141</width>
         <height>21</height>
        </rect>
@@ -888,7 +985,7 @@ Wind: 10 km/h</string>
       <property name="font">
        <font>
         <family>Arial Rounded MT</family>
-        <pointsize>11</pointsize>
+        <pointsize>13</pointsize>
         <bold>true</bold>
        </font>
       </property>
@@ -899,7 +996,7 @@ Wind: 10 km/h</string>
        <string>Scattered thunderstorms</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_31">
+     <widget class="QLabel" name="label_day_name5">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -911,19 +1008,18 @@ Wind: 10 km/h</string>
       <property name="font">
        <font>
         <family>Arial Rounded MT</family>
-        <pointsize>12</pointsize>
+        <pointsize>14</pointsize>
         <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)
-</string>
+       <string notr="true">color:rgb(0, 0, 0)</string>
       </property>
       <property name="text">
        <string>Tuesday</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_10">
+     <widget class="QPushButton" name="btn_icon_day5">
       <property name="geometry">
        <rect>
         <x>90</x>
@@ -950,505 +1046,6 @@ border: none</string>
        </size>
       </property>
      </widget>
-    </widget>
-    <widget class="QFrame" name="frame_7">
-     <property name="geometry">
-      <rect>
-       <x>260</x>
-       <y>550</y>
-       <width>161</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color:rgb(255, 231, 193)</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-     <widget class="QLabel" name="label_12">
-      <property name="geometry">
-       <rect>
-        <x>80</x>
-        <y>10</y>
-        <width>71</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Comic Sans MS</family>
-        <pointsize>8</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0,0,0)</string>
-      </property>
-      <property name="text">
-       <string>Precipitation: 65%
-Humidity: 73%
-Wind: 11 km/h</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_25">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>90</y>
-        <width>81</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Microsoft YaHei UI</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
-      </property>
-      <property name="text">
-       <string>33°C  &lt;-- 27°C</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_30">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>71</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial Rounded MT</family>
-        <pointsize>12</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
-      </property>
-      <property name="text">
-       <string>Wednesday</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_32">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>60</y>
-        <width>91</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial Rounded MT</family>
-        <pointsize>11</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
-      </property>
-      <property name="text">
-       <string>ThunderShower</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_11">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>60</y>
-        <width>80</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background: none;
-border: none
-
-</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../../../../../Downloads/tstormday-removebg-preview.png</normaloff>../../../../../Downloads/tstormday-removebg-preview.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QFrame" name="frame_8">
-     <property name="geometry">
-      <rect>
-       <x>470</x>
-       <y>550</y>
-       <width>161</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color:rgb(255, 231, 193)
-</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-     <widget class="QLabel" name="label_33">
-      <property name="geometry">
-       <rect>
-        <x>80</x>
-        <y>10</y>
-        <width>71</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Comic Sans MS</family>
-        <pointsize>8</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
-      </property>
-      <property name="text">
-       <string>Precipitation: 45%
-Humidity: 68%
-Wind: 13 km/h</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_34">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>90</y>
-        <width>81</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Microsoft YaHei UI</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
-      </property>
-      <property name="text">
-       <string>33°C  &lt;-- 28°C</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_35">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>71</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial Rounded MT</family>
-        <pointsize>12</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
-      </property>
-      <property name="text">
-       <string>Thursday</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_36">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>50</y>
-        <width>91</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial Rounded MT</family>
-        <pointsize>11</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
-      </property>
-      <property name="text">
-       <string>Thundershower</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_12">
-      <property name="geometry">
-       <rect>
-        <x>80</x>
-        <y>80</y>
-        <width>71</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background: none;
-border: none</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../../../../../Downloads/tstormday-removebg-preview.png</normaloff>../../../../../Downloads/tstormday-removebg-preview.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QFrame" name="frame_9">
-     <property name="geometry">
-      <rect>
-       <x>660</x>
-       <y>400</y>
-       <width>161</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color:rgb(255, 231, 193)</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-     <widget class="QLabel" name="label_17">
-      <property name="geometry">
-       <rect>
-        <x>80</x>
-        <y>10</y>
-        <width>71</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Comic Sans MS</family>
-        <pointsize>8</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
-      </property>
-      <property name="text">
-       <string>Precipitation: 75%
-Humidity: 68%
-Wind: 11 km/h</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_37">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>70</y>
-        <width>71</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Microsoft YaHei UI</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
-      </property>
-      <property name="text">
-       <string>34°C  &lt;-- 27°C</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_38">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>71</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial Rounded MT</family>
-        <pointsize>12</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
-      </property>
-      <property name="text">
-       <string>Friday</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_39">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>50</y>
-        <width>51</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial Rounded MT</family>
-        <pointsize>11</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(0, 0, 0)</string>
-      </property>
-      <property name="text">
-       <string>rainy</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_13">
-      <property name="geometry">
-       <rect>
-        <x>80</x>
-        <y>70</y>
-        <width>81</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background: none;
-border: none</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../../../../../Downloads/image-5ae9ca7fad3bc-removebg-preview.png</normaloff>../../../../../Downloads/image-5ae9ca7fad3bc-removebg-preview.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>60</width>
-        <height>60</height>
-       </size>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QLabel" name="label_40">
-     <property name="geometry">
-      <rect>
-       <x>830</x>
-       <y>40</y>
-       <width>71</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century</family>
-       <pointsize>15</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Khiem</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_45">
-     <property name="geometry">
-      <rect>
-       <x>780</x>
-       <y>30</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>../../../../../Downloads/images__2_-removebg-preview.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit">
-     <property name="geometry">
-      <rect>
-       <x>540</x>
-       <y>20</y>
-       <width>201</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:1 rgba(0, 0, 0, 255));
-border: 3px solid black;
- border-radius: 20px;
- padding: 10px 16px;
-background-color: transparent;
- color: black;
-    font-size: 14px;</string>
-     </property>
-     <property name="placeholderText">
-      <string>search anything</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_46">
-     <property name="geometry">
-      <rect>
-       <x>680</x>
-       <y>30</y>
-       <width>31</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border: None;</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>../../../../../Downloads/images__1_-removebg-preview (1).png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
     </widget>
    </widget>
    <widget class="QWidget" name="account">
@@ -1725,11 +1322,65 @@ border: none</string>
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="btn_profile">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: none;
+border: none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../Downloads/user-solid.svg</normaloff>../../../../../Downloads/user-solid.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_detail">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>410</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: none;
+border: none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../Downloads/info-circle-solid.svg</normaloff>../../../../../Downloads/info-circle-solid.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>490</y>
       <width>91</width>
       <height>71</height>
      </rect>

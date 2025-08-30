@@ -4,6 +4,7 @@ from PyQt6.QtGui import *
 from PyQt6 import uic
 import sys
 from data_io import *
+from weather_api import *
 
 class Alert(QMessageBox):
     def error_message(self, title, message):
@@ -158,7 +159,10 @@ class Home(QWidget):
 
         self.id = id
         self.user = get_user_by_id(id)
+        self.current_city = "Ho Chi Minh City"
         self.load_user_info()
+        self.setup_weather_ui()
+        self.load_weather_data()
         
         self.stack_widget = self.findChild(QStackedWidget, "stackedWidget")
         self.btn_home = self.findChild(QPushButton, "btn_home")
@@ -171,11 +175,145 @@ class Home(QWidget):
         self.txt_birthday = self.findChild(QDateEdit, "txt_birthday")
         self.txt_gender = self.findChild(QComboBox, "txt_gender")
         self.btn_avatar = self.findChild(QPushButton, "btn_avatar")
+        
+        # Weather UI elements
+        self.txt_search = self.findChild(QLineEdit, "txt_search")
+        self.label_city_name = self.findChild(QLabel, "label_city_name")
+        self.label_current_temp = self.findChild(QLabel, "label_current_temp")
+        self.label_current_day = self.findChild(QLabel, "label_current_day")
 
         self.btn_home.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 0))
         self.btn_profile.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 1))
         self.btn_save_account.clicked.connect(self.update_user_info)
         self.btn_avatar.clicked.connect(self.update_avatar)
+        
+        # Connect search functionality
+        self.txt_search.returnPressed.connect(self.search_weather)
+
+    def setup_weather_ui(self):
+        """Setup weather UI elements with proper naming"""
+        self.weather_frames = []
+        self.weather_labels = {}
+        
+        # Get all weather frame elements
+        for i in range(1, 6):  # 5 days
+            frame = self.findChild(QFrame, f"frame_day{i}")
+            if frame:
+                self.weather_frames.append(frame)
+                
+                # Get labels for each day
+                day_name = self.findChild(QLabel, f"label_day_name{i}")
+                weather_desc = self.findChild(QLabel, f"label_weather_day{i}")
+                temp = self.findChild(QLabel, f"label_temp_day{i}")
+                details = self.findChild(QLabel, f"label_details_day{i}")
+                icon_btn = self.findChild(QPushButton, f"btn_icon_day{i}")
+                
+                if all([day_name, weather_desc, temp, details, icon_btn]):
+                    self.weather_labels[i] = {
+                        'day_name': day_name,
+                        'weather_desc': weather_desc,
+                        'temp': temp,
+                        'details': details,
+                        'icon_btn': icon_btn
+                    }
+
+    def search_weather(self):
+        """Search for weather by city name"""
+        city = self.txt_search.text().strip()
+        if city:
+            self.current_city = city
+            self.load_weather_data()
+            self.txt_search.clear()
+
+    def load_weather_data(self):
+        """Load weather data from API"""
+        try:
+            # Get current weather
+            current_weather = get_weather_by_name(self.current_city)
+            if current_weather and current_weather.get('cod') == 200:
+                self.update_current_weather(current_weather)
+            
+            # Get 5-day forecast
+            forecast = get_weather_forecast_by_name(self.current_city)
+            if forecast and forecast.get('cod') == '200':
+                self.update_forecast(forecast)
+                
+        except Exception as e:
+            print(f"Error loading weather data: {e}")
+
+    def update_current_weather(self, weather_data):
+        """Update current weather display"""
+        try:
+            # Update city name
+            self.label_city_name.setText(self.current_city)
+            
+            # Update temperature
+            temp = weather_data['main']['temp']
+            self.label_current_temp.setText(f"{int(temp)}°C")
+            
+            # Update current day
+            from datetime import datetime
+            current_day = datetime.now().strftime('%A')
+            self.label_current_day.setText(current_day)
+            
+        except Exception as e:
+            print(f"Error updating current weather: {e}")
+
+    def update_forecast(self, forecast_data):
+        """Update 5-day forecast display"""
+        try:
+            # Group forecasts by day
+            daily_forecasts = {}
+            
+            for item in forecast_data['list']:
+                from datetime import datetime
+                dt = datetime.fromtimestamp(item['dt'])
+                date_key = dt.strftime('%Y-%m-%d')
+                
+                if date_key not in daily_forecasts:
+                    daily_forecasts[date_key] = {
+                        'date': dt,
+                        'day_name': dt.strftime('%A'),
+                        'temp_min': float('inf'),
+                        'temp_max': float('-inf'),
+                        'weather_main': item['weather'][0]['main'],
+                        'weather_desc': item['weather'][0]['description'],
+                        'humidity': item['main']['humidity'],
+                        'wind_speed': item['wind']['speed'],
+                        'pop': item.get('pop', 0) * 100
+                    }
+                
+                # Update min/max temperatures
+                temp = item['main']['temp']
+                daily_forecasts[date_key]['temp_min'] = min(daily_forecasts[date_key]['temp_min'], temp)
+                daily_forecasts[date_key]['temp_max'] = max(daily_forecasts[date_key]['temp_max'], temp)
+            
+            # Convert to list and sort by date
+            daily_list = list(daily_forecasts.values())
+            daily_list.sort(key=lambda x: x['date'])
+            
+            # Update UI for 5 days
+            for i, day_data in enumerate(daily_list[:5], 1):
+                if i in self.weather_labels:
+                    labels = self.weather_labels[i]
+                    
+                    # Update day name
+                    labels['day_name'].setText(day_data['day_name'])
+                    
+                    # Update weather description
+                    labels['weather_desc'].setText(day_data['weather_desc'].title())
+                    
+                    # Update temperature
+                    temp_min = int(day_data['temp_min'])
+                    temp_max = int(day_data['temp_max'])
+                    labels['temp'].setText(f"{temp_max}°C ← {temp_min}°C")
+                    
+                    # Update details
+                    details_text = f"Precipitation: {day_data['pop']:.0f}%\nHumidity: {day_data['humidity']}%\nWind: {day_data['wind_speed']:.0f} km/h"
+                    labels['details'].setText(details_text)
+                    
+        except Exception as e:
+            print(f"Error updating forecast: {e}")
 
     def navigate_screen(self, stackWidget: QStackedWidget, index: int):
         stackWidget.setCurrentIndex(index)
@@ -206,6 +344,7 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     msg = Alert()
     login = Login()
+    login = Home(1)
     login.show()
     sys.exit(app.exec())        
 

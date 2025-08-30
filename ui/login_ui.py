@@ -13,30 +13,15 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(800, 600)
-        self.label = QtWidgets.QLabel(parent=Form)
-        self.label.setGeometry(QtCore.QRect(-10, 10, 811, 601))
-        self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("/Users/pinxun/Documents/MindX/PTA/PTA09/GiaKhiem/python-app/ui/../img/original-41d71b37aff8a5479729279fbc6bd47e.webp"))
-        self.label.setObjectName("label")
-        self.label_4 = QtWidgets.QLabel(parent=Form)
-        self.label_4.setGeometry(QtCore.QRect(220, 20, 421, 191))
-        font = QtGui.QFont()
-        font.setFamily("Arial Rounded MT")
-        font.setPointSize(35)
-        font.setBold(True)
-        self.label_4.setFont(font)
-        self.label_4.setStyleSheet("color:rgb(30, 255, 240)")
-        self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("/Users/pinxun/Documents/MindX/PTA/PTA09/GiaKhiem/python-app/ui/../../../../../Downloads/images-removebg-preview (1).png"))
-        self.label_4.setObjectName("label_4")
         self.label_3 = QtWidgets.QLabel(parent=Form)
-        self.label_3.setGeometry(QtCore.QRect(650, 30, 111, 61))
+        self.label_3.setGeometry(QtCore.QRect(660, 30, 111, 61))
         font = QtGui.QFont()
-        font.setFamily("Britannic")
+        font.setFamily("Segoe UI")
         font.setPointSize(25)
+        font.setBold(True)
         font.setUnderline(True)
         self.label_3.setFont(font)
-        self.label_3.setStyleSheet("color:rgb(255, 255, 255)")
+        self.label_3.setStyleSheet("color:black;")
         self.label_3.setObjectName("label_3")
         self.label_5 = QtWidgets.QLabel(parent=Form)
         self.label_5.setGeometry(QtCore.QRect(270, 210, 151, 31))
@@ -45,17 +30,18 @@ class Ui_Form(object):
         font.setPointSize(20)
         font.setBold(True)
         self.label_5.setFont(font)
-        self.label_5.setStyleSheet("color:rgb(0, 255, 212)")
+        self.label_5.setStyleSheet("color:rgb(0, 0, 0)")
         self.label_5.setObjectName("label_5")
         self.txt_email = QtWidgets.QLineEdit(parent=Form)
         self.txt_email.setGeometry(QtCore.QRect(270, 250, 211, 41))
-        self.txt_email.setStyleSheet("background-color:qlineargradient(spread:pad, x1:0.174033, y1:0.276, x2:1, y2:1, stop:0 rgba(0, 208, 255, 255), stop:0.679558 rgba(162, 0, 255, 255));\n"
-"border: 2px solid white;\n"
+        self.txt_email.setStyleSheet("background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:1 rgba(0, 0, 0, 255));\n"
+"border: 3px solid black;\n"
 " border-radius: 20px;\n"
 " padding: 10px 16px;\n"
 "background-color: transparent;\n"
-" color: white;\n"
+" color: black;\n"
 "    font-size: 14px;")
+        self.txt_email.setText("")
         self.txt_email.setObjectName("txt_email")
         self.label_7 = QtWidgets.QLabel(parent=Form)
         self.label_7.setGeometry(QtCore.QRect(270, 310, 131, 31))
@@ -64,15 +50,15 @@ class Ui_Form(object):
         font.setPointSize(20)
         font.setBold(True)
         self.label_7.setFont(font)
-        self.label_7.setStyleSheet("color:rgb(0, 255, 212)")
+        self.label_7.setStyleSheet("color:rgb(0, 0, 0)")
         self.label_7.setObjectName("label_7")
         self.txt_password = QtWidgets.QLineEdit(parent=Form)
         self.txt_password.setGeometry(QtCore.QRect(270, 360, 181, 41))
-        self.txt_password.setStyleSheet("border: 2px solid white;\n"
+        self.txt_password.setStyleSheet("border: 3px solid black;\n"
 " border-radius: 20px;\n"
 " padding: 10px 16px;\n"
 "background-color: transparent;\n"
-" color: white;\n"
+" color: black;\n"
 "    font-size: 14px;")
         self.txt_password.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
         self.txt_password.setObjectName("txt_password")
@@ -83,7 +69,7 @@ class Ui_Form(object):
         font.setPointSize(10)
         font.setBold(True)
         self.btn_login.setFont(font)
-        self.btn_login.setStyleSheet("background-color:qlineargradient(spread:pad, x1:0.174033, y1:0.276, x2:1, y2:1, stop:0 rgba(0, 208, 255, 255), stop:0.679558 rgba(162, 0, 255, 255));\n"
+        self.btn_login.setStyleSheet("background-color:rgb(0, 0, 0);\n"
 "color:rgb(255, 255, 255);\n"
 "border-radius: 15px")
         self.btn_login.setObjectName("btn_login")
@@ -104,15 +90,39 @@ class Ui_Form(object):
         self.btn_eye.setIcon(icon)
         self.btn_eye.setObjectName("btn_eye")
         self.btn_register = QtWidgets.QPushButton(parent=Form)
-        self.btn_register.setGeometry(QtCore.QRect(500, 50, 131, 31))
+        self.btn_register.setGeometry(QtCore.QRect(490, 50, 131, 31))
         font = QtGui.QFont()
         font.setPointSize(23)
         font.setBold(True)
         self.btn_register.setFont(font)
         self.btn_register.setStyleSheet("background: none;\n"
 "border: none;\n"
-"color:rgb(255, 255, 255);")
+"color:black;")
         self.btn_register.setObjectName("btn_register")
+        self.label = QtWidgets.QLabel(parent=Form)
+        self.label.setGeometry(QtCore.QRect(0, 0, 801, 600))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("/Users/pinxun/Documents/MindX/PTA/PTA09/GiaKhiem/python-app/ui/../../../../../Downloads/FEAT-DP-Longest-Mountain-Ranges-on-Earth.png"))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(parent=Form)
+        self.label_2.setGeometry(QtCore.QRect(300, 70, 171, 61))
+        font = QtGui.QFont()
+        font.setFamily("Arial Rounded MT")
+        font.setPointSize(45)
+        font.setBold(True)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.label.raise_()
+        self.label_3.raise_()
+        self.label_5.raise_()
+        self.txt_email.raise_()
+        self.label_7.raise_()
+        self.txt_password.raise_()
+        self.btn_login.raise_()
+        self.checkBox.raise_()
+        self.btn_eye.raise_()
+        self.btn_register.raise_()
+        self.label_2.raise_()
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -120,7 +130,7 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.label_3.setText(_translate("Form", "log in"))
+        self.label_3.setText(_translate("Form", "Log in"))
         self.label_5.setText(_translate("Form", "Email"))
         self.txt_email.setPlaceholderText(_translate("Form", "Put your username here"))
         self.label_7.setText(_translate("Form", "Password"))
@@ -128,3 +138,4 @@ class Ui_Form(object):
         self.btn_login.setText(_translate("Form", "Log in"))
         self.checkBox.setText(_translate("Form", "Remember me"))
         self.btn_register.setText(_translate("Form", "Sign Up"))
+        self.label_2.setText(_translate("Form", "Log in"))
