@@ -312,6 +312,11 @@ class Home(QWidget):
                     details_text = f"Precipitation: {day_data['pop']:.0f}%\nHumidity: {day_data['humidity']}%\nWind: {day_data['wind_speed']:.0f} km/h"
                     labels['details'].setText(details_text)
                     
+                    # Update weather icon
+                    icon_path = f"weather_icons/{day_data['weather_icon']}.png"
+                    labels['icon_btn'].setIcon(QIcon(icon_path))
+                    labels['icon_btn'].setIconSize(QSize(40, 40))
+                    
         except Exception as e:
             print(f"Error updating forecast: {e}")
 
@@ -344,7 +349,6 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     msg = Alert()
     login = Login()
-    login = Home(1)
     login.show()
     sys.exit(app.exec())        
 
