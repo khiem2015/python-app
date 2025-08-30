@@ -278,6 +278,7 @@ class Home(QWidget):
                         'temp_max': float('-inf'),
                         'weather_main': item['weather'][0]['main'],
                         'weather_desc': item['weather'][0]['description'],
+                        'weather_icon': item['weather'][0]['icon'],
                         'humidity': item['main']['humidity'],
                         'wind_speed': item['wind']['speed'],
                         'pop': item.get('pop', 0) * 100
@@ -312,8 +313,8 @@ class Home(QWidget):
                     details_text = f"Precipitation: {day_data['pop']:.0f}%\nHumidity: {day_data['humidity']}%\nWind: {day_data['wind_speed']:.0f} km/h"
                     labels['details'].setText(details_text)
                     
-                    # Update weather icon
                     icon_path = f"weather_icons/{day_data['weather_icon']}.png"
+                    print(f"Loading icon: {icon_path} for day {i}")
                     labels['icon_btn'].setIcon(QIcon(icon_path))
                     labels['icon_btn'].setIconSize(QSize(40, 40))
                     
