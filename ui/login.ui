@@ -234,7 +234,7 @@ color:black;</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../../Downloads/FEAT-DP-Longest-Mountain-Ranges-on-Earth.png</pixmap>
+    <pixmap>../img/FEAT-DP-Longest-Mountain-Ranges-on-Earth.webp</pixmap>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
