@@ -13,8 +13,8 @@
         "email": "khiemnguyen2501@gamil.com",
         "password": "prokhiem0025",
         "name": "khiem",
-        "birthday": "",
-        "gender": "",
+        "birthday": "01/01/2000",
+        "gender": "Male",
         "avatar": ""
     }
 ]
