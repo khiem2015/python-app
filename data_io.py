@@ -27,7 +27,7 @@ def get_user_by_id(id):
     for user in users:
         if user["id"] == id:
             return user
-        return None
+    return None
     
 def get_user_by_email(email):
     users = load_json("data/users.json")

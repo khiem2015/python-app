@@ -39,7 +39,7 @@ class Ui_Form(object):
 " border-radius: 20px;\n"
 " padding: 10px 16px;\n"
 "background-color: transparent;\n"
-" color: black;\n"
+" color: white;\n"
 "    font-size: 14px;")
         self.txt_email.setText("")
         self.txt_email.setObjectName("txt_email")
@@ -58,7 +58,7 @@ class Ui_Form(object):
 " border-radius: 20px;\n"
 " padding: 10px 16px;\n"
 "background-color: transparent;\n"
-" color: black;\n"
+" color: white;\n"
 "    font-size: 14px;")
         self.txt_password.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
         self.txt_password.setObjectName("txt_password")
@@ -102,7 +102,7 @@ class Ui_Form(object):
         self.label = QtWidgets.QLabel(parent=Form)
         self.label.setGeometry(QtCore.QRect(0, 0, 801, 600))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("/Users/pinxun/Documents/MindX/PTA/PTA09/GiaKhiem/python-app/ui/../../../../../Downloads/FEAT-DP-Longest-Mountain-Ranges-on-Earth.png"))
+        self.label.setPixmap(QtGui.QPixmap("/Users/pinxun/Documents/MindX/PTA/PTA09/GiaKhiem/python-app/ui/../img/FEAT-DP-Longest-Mountain-Ranges-on-Earth.webp"))
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(parent=Form)
         self.label_2.setGeometry(QtCore.QRect(300, 70, 171, 61))
