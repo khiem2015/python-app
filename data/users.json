@@ -7,5 +7,14 @@
         "birthday": "",
         "gender": "",
         "avatar": ""
+    },
+    {
+        "id": 2,
+        "email": "khiemnguyen2501@gamil.com",
+        "password": "prokhiem0025",
+        "name": "khiem",
+        "birthday": "",
+        "gender": "",
+        "avatar": ""
     }
 ]
