@@ -1,0 +1,60 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #container {
+        background-color: white;
+        display: inline;
+        width: 200px;
+        height: 150px;
+    }
+
+    #container-1 {
+        background-color: red;
+        width: 20px;
+        height: 150px;
+        left: 85px;
+        position: relative;
+    }
+
+    #container-2 {
+        background-color: red;
+        width: 200px;
+        height: 20px;
+        top: -85px;
+        position: relative;
+    }
+
+    #cross-1-1 {
+        color: red;
+        font-size: 70px;
+        top: -10px;
+        left: -60px;
+        position: absolute;
+    }
+
+    #cross-1-2 {
+        color: red;
+        font-size: 70px;
+        top: -10px;
+        left: 40px;
+        position: absolute;
+    }
+
+    #cross-2-1 {
+        color: red;
+        font-size: 70px;
+        left: 20px;
+        top: 10px;
+        position: absolute;
+    }
+
+    #cross-2-2 {
+        color: red;
+        font-size: 70px;
+        left: 125px;
+        top: 10px;
+        position: absolute;
+    }

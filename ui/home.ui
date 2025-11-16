@@ -487,21 +487,22 @@ Wind: 8 km/h</string>
       <property name="geometry">
        <rect>
         <x>210</x>
-        <y>-40</y>
+        <y>-10</y>
         <width>271</width>
-        <height>211</height>
+        <height>181</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">background: none;
-border: none</string>
+border: none;
+background-color: rgb(255, 170, 127)</string>
       </property>
       <property name="text">
        <string/>
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>../img/112082293-ho-chi-minh-city-saigon-skyline-vietnam-trendy-vector-illustration-linear-style.jpg</normaloff>../img/112082293-ho-chi-minh-city-saigon-skyline-vietnam-trendy-vector-illustration-linear-style.jpg</iconset>
+        <normaloff>../img/photo-1705077031869-51b60754302a.jpg</normaloff>../img/photo-1705077031869-51b60754302a.jpg</iconset>
       </property>
       <property name="iconSize">
        <size>

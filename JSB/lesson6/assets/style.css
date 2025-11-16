@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: indianred;
+    width: 2000px;
+    height: 1500px;
+}
+
+#container-1 {
+    color: white;
+    font-size: 90px;
+    font: bold;
+    margin-left: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+}
+
+.container-1-1 {
+    color: white;
+    font: bold;
+    top: 200px;
+    left: 100px;
+    position: absolute;
+    width: 600px;
+    height: 100px;
+}
+
+.container-1-2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px;
+    top: 700px;
+    left: 150px;
+    position: absolute;
+}
+
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    background: rgb(199, 114, 109);
+    color: white;
+    border: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3ms ;
+    top: 700px;
+    left: 350px;
+    position: absolute;
+}
+
+.download-btn:hover {
+    background: rgb(207, 66, 66);
+}
+
+.container-2-1 {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 58px;
+    top: 15px;
+    left: 750px;
+    position: absolute;
+    
+}
+
+.container-2-2 {
+    top: 240px;
+    left: 750px;
+    position: absolute;
+    transform: rotate(30deg);
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+

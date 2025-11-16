@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;  
+    }
+
+    #container-1 {
+        background-color: black;
+        text-align: center;
+        color: white;
+        padding: 20px 0;
+    }
+
+    #container-2 {
+        background-color: red;
+        text-align: center;
+        color: white;
+        padding: 50px 80px;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    #container-3 {
+        margin-top: 30px;
+        padding: 20px 0;
+        background-color: gray;
+        padding-left: 10px;
+    }
+
+    #container-4 {
+        margin-top: 800px;
+        background-color: gray;
+        height: 400px;
+        padding: 20px 0;
+        position: relative; 
+    }
+
+    #container-5 {
+        margin-top: 100px;
+        background-color: gray;
+        height: 400px;
+    }
+
+    #btn-black{
+        background-color: blue;
+        color: white;
+        padding:  20px 40px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+</style>
+<body>
+    <div id="container-1">
+        Thanh Menu
+    </div>
+    <div id="container-2">
+        Thông báo cố định
+    </div>
+    <div id="container-3">
+        <p>Đay là 1 đoạn văn static mặc định</p>
+    </div>
+    <div id="container-4">
+        <button id="btn-black">
+            <a href="#container-1">Quay lại đầu trang</a>
+        </button>
+    </div>
+    
+    <div id="container5"></div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#slidebar {
+    background-color: blue;
+    width: 300px;
+    height: 2000px;
+}
+
+#circle {
+    border-radius: 50%;
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    top: 110px;
+    left: 60px;
+    position: fixed;
+}
+
+#nutgioithieu {
+    font-size: 30px;
+    width: 100px;
+    height: 20px;
+    top: 300px;
+    left: 55px;
+    position: fixed;
+}
+
+#nutduan {
+    font-size: 15px;
+    width: 100px;
+    height: 20px;
+    top: 370px;
+    left: 55px;
+    position: fixed;
+}
+
+#nutlienhe {
+    font-size: 15px;
+    width: 100px;
+    height: 20px;
+    top: 440px;
+    left: 55px;
+    position: fixed;
+}
+
+#container {
+    background-color: gray;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    top: 0px;
+    left: 600px;
+    position: absolute;
+}
+
+#container-1 {
+    background-color: greenyellow;
+    width: 500px;
+    height: 200px;
+    top: -1900px;
+    left: 1000px;
+    position: relative;
+}
+
+#container-2 {
+    background-color: aliceblue;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    top: 400px;
+    left: 690px;
+    position: absolute;
+}
+
+
+

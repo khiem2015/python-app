@@ -1,0 +1,130 @@
+* {
+     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: red;
+    width: 100px;
+    height: 70px;
+    position: relative;
+}
+
+#star {
+    color: yellow;
+    font-size: 40px;
+    position: absolute;
+    left: 30px;
+    bottom: 12px;
+}
+
+#container-2-1 {
+    background-color: red;
+    width: 50px;
+    height: 70px;
+    position: relative;
+}
+
+#container-2-2 {
+        background-color: red;
+        width: 50px;
+        height: 70px;
+        position: relative;
+        top: 20px;
+}
+
+#container-3-1 {
+        background-color: red;
+        width: 100px;
+        height: 70px;
+        position: relative;
+        top: -140px;
+        left: 70px;
+}
+
+#container-3-2 {
+        background-color: red;
+        width: 100px;
+        height: 70px;
+        position: relative;
+        top: -120px;
+        left: 70px;
+}
+
+#container-4 {
+    background-color: red;
+    width: 170px;
+    height: 120px;
+    position: relative;
+}
+
+#container-4-1 {
+    background-color: white;
+    width: 20px;
+    height: 160px;
+    position: absolute;
+    top: 310px;
+    left: 40px
+}
+
+#container-4-2 {
+    background-color: white;
+    width: 170px;
+    height: 20px;
+    position: absolute;
+    top: 390px
+}
+
+#container-5 {
+    background: linear-gradient(180deg, #fff 0 50%, #f00 50% 100%);
+    width: 170px;
+    height: 160px;
+    position: relative;
+}
+
+#container-6 {
+    background: linear-gradient(180deg, #f00 0 50%, #fff 50% 100%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 530px;
+    left: 30px;
+}
+
+
+
+#container-7 {
+    background-color: red;
+    width: 70px;
+    height: 150px;
+    position: relative;
+}
+
+#container-8 {
+    background-color: green;
+    width: 190px;
+    height: 50px;
+    top: -160px;
+    left: 70px;
+    position: relative;
+}
+
+#container-9 {
+    background-color: white;
+    width: 190px;
+    height: 50px;
+    top: -160px;
+    left: 70px;
+    position: relative;
+}
+
+#container-10 {
+    background-color: black;
+    width: 190px;
+    height: 50px;
+    top: -150px;
+    left: 70px;
+    position: relative;
+}
